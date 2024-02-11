@@ -2,7 +2,7 @@ workflows:
   android_build:
     name: "QuranGND"
 
-    # Define the workflow stages
+    # Define the workflow stages as a list
     - name: Checkout repository
       script: git clone https://github.com/TechBeeps/GND-App.git
 
