@@ -1,6 +1,6 @@
 workflows:
   android_build:
-    name: Android Build
+    name: "QuranGND"
     environment:
       android: "30"
 
@@ -10,7 +10,7 @@ workflows:
         script: |
            git clone https://github.com/TechBeeps/GND-App.git
 
-    - name: setup_dependencies
+     - name: setup_dependencies
         script: |
           cd your_android_app
           ./gradlew dependencies
