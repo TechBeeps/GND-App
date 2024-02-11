@@ -1,0 +1,38 @@
+workflows:
+  android_build:
+    name: Android Build
+    environment:
+      flutter: stable
+
+    # Define the workflow triggers
+    trigger:
+      event:
+        - push
+        - pull_request
+
+    # Define the workflow stages
+    stages:
+      - name: checkout_repository
+        commands:
+          - git clone https://github.com/TechBeeps/GND-App.git
+
+      - name: setup_dependencies
+        commands:
+          - cd your_android_app
+          #- flutter doctor # If using Flutter dependencies, otherwise skip this step
+          #- flutter pub get # If using Flutter dependencies, otherwise skip this step
+
+      - name: build_apk
+        commands:
+          - ./gradlew assembleRelease # Use gradle command to build the release APK
+          # - ./gradlew assembleDebug # If you want to build debug APK as well
+
+      - name: deploy_to_store
+        commands:
+          - # Add commands to deploy the APK to Google Play Store or any other distribution platform
+
+    # Define workflows' cache dependencies
+    cache:
+      directories:
+        - $HOME/.gradle/caches/
+        - $HOME/.gradle/wrapper/
