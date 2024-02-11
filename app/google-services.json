@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "25234618880",
+    "firebase_url": "https://quran-gnd-app-default-rtdb.firebaseio.com",
+    "project_id": "quran-gnd-app",
+    "storage_bucket": "quran-gnd-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:25234618880:android:61e369390585fd4faff6e5",
+        "android_client_info": {
+          "package_name": "quran.gnd.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "25234618880-q7cavde0sqdapk1ji5t7rqam9026r81b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "quran.gnd.com",
+            "certificate_hash": "13fdc5eb29ea08cac78057752ade566472412690"
+          }
+        },
+        {
+          "client_id": "25234618880-bt00i45cuq96ni0gfr65o47e1r23mt70.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVF753OyjelV_NfojOlxw6iSgQZ-FMgRM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "25234618880-bt00i45cuq96ni0gfr65o47e1r23mt70.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
