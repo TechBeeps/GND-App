@@ -5,14 +5,14 @@ workflows:
       android: "30"
 
     # Define the workflow stages
-    scripts:
+    jobs:
       - name: checkout_repository
         script: |
-           git clone https://github.com/TechBeeps/GND-App.git
+          git clone https://github.com/TechBeeps/GND-App.git
 
-     - name: setup_dependencies
+      - name: setup_dependencies
         script: |
-          cd your_android_app
+          cd GND-App
           ./gradlew dependencies
 
       - name: build_apk
