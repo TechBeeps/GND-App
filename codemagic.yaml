@@ -3,16 +3,17 @@ workflows:
     name: "QuranGND"
 
     # Define the workflow stages as a list
-    - name: Checkout repository
-      script: git clone https://github.com/TechBeeps/GND-App.git
+    jobs:
+      - name: Checkout repository
+        script: git clone https://github.com/TechBeeps/GND-App.git
 
-    - name: Setup dependencies
-      script: |
-        cd GND-App
-        ./gradlew dependencies
+      - name: Setup dependencies
+        script: |
+          cd GND-App
+          ./gradlew dependencies
 
-    - name: Build APK
-      script: ./gradlew assembleRelease
+      - name: Build APK
+        script: ./gradlew assembleRelease
 
     # Define workflows' cache dependencies
     cache:
