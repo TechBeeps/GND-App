@@ -5,7 +5,7 @@ workflows:
       android: "30"
 
     # Define the workflow stages
-    jobs:
+    scripts:
       - name: checkout_repository
         script: |
           git clone https://github.com/TechBeeps/GND-App.git
